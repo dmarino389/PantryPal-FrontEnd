@@ -138,6 +138,7 @@ export default function Page() {
           <a href="/register" className='text-lg text-orange-500 font-semibold hover:text-green-800'>Create an account</a>
         </div>
       </div>
+      
       <div className='fixed bottom-0 left-0 right-0 py-4 bg-white shadow-md'>
         <div className='w-full flex justify-around items-center'>
           <Link legacyBehavior href="/pantry">

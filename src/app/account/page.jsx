@@ -5,20 +5,21 @@ const HomePage = () => {
   return (
     <div className="flex flex-col h-screen">
       <div className="flex-grow flex flex-col justify-center px-6 py-10">
-        <h1 className="text-4xl font-bold text-green-600 text-center">Welcome to Pantry Pal</h1>
-        <p className="mt-6 text-center text-sm text-gray-700">
+        <h1 className="text-6xl font-bold text-green-600 text-center pb-18">Welcome to <br/>Pantry Pal</h1>
+        <p className="mt-6 text-center text-lg text-gray-700 pb-20">
           We know you’re hungry! Let us know what ingredients you have at home and we’ll help you find quick & easy recipes.
         </p>
+        
         <div className="mt-10">
           <Link href="/register" legacyBehavior>
-            <a className="block w-full bg-green-500 text-white text-center py-3 rounded-full mb-4 transition duration-300 ease-in-out hover:bg-green-600">
+            <a className="block w-full bg-green-500 text-white text-center py-3 rounded-lg mb-4 transition duration-300 ease-in-out hover:bg-green-600">
               Create account
             </a>
           </Link>
           <div className="text-center text-sm text-gray-600 mb-2">Already have an account? <Link href="/login" legacyBehavior><a className="text-orange-500">Log in</a></Link></div>
           <div className="text-center text-sm text-gray-600 my-2">OR</div>
           <Link href="/pantry" legacyBehavior>
-            <a className="block w-full bg-white text-green-600 border-green-500 border-2 text-center py-3 rounded-full transition duration-300 ease-in-out hover:bg-green-600 hover:text-white">
+            <a className="block w-full bg-white text-green-600 border-green-500 border-2 text-center py-3 rounded-lg transition duration-300 ease-in-out hover:bg-green-600 hover:text-white">
               Continue as guest
             </a>
           </Link>
@@ -27,8 +28,10 @@ const HomePage = () => {
           </p>
         </div>
       </div>
+      <hr />
       <div className='w-full flex justify-around items-center p-4 bg-white shadow-md'>
       <div className='w-full flex justify-around items-center'>
+        
           <Link legacyBehavior href="/pantry">
             <a className="flex flex-col items-center text-gray-700 font-medium">
               {/* SVG for Pantry */}
